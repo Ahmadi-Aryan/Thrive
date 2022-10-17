@@ -853,8 +853,10 @@ public partial class Microbe : RigidBody, ISpawned, IProcessable, IMicrobeAI, IS
             return;
 
         // TODO: should movement also be applied here?
+        // physics run at a different hz than _Process, put it all in here
 
-        physicsState.Transform = GetNewPhysicsRotation(physicsState.Transform);
+        // physicsState.Transform = GetNewPhysicsRotation(physicsState.Transform);
+        this.LookFollow(physicsState, GlobalTransform, LookAtPoint, RotationSpeed);
 
         // Reset total sum from previous collisions
         collisionForce = 0.0f;
