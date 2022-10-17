@@ -72,6 +72,7 @@
     <Compile Include="src\engine\IResource.cs" />
     <Compile Include="src\engine\ITextureResource.cs" />
     <Compile Include="src\engine\ResourceManager.cs" />
+    <Compile Include="src\engine\RigidBodyHelpers.cs" />
     <Compile Include="src\engine\SafeModeStartupHandler.cs" />
     <Compile Include="src\engine\StartupAttemptInfo.cs" />
     <Compile Include="src\engine\UnhandledExceptionLogger.cs" />
