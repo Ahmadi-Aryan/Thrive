@@ -854,8 +854,8 @@ public partial class Microbe : RigidBody, ISpawned, IProcessable, IMicrobeAI, IS
 
         // TODO: should movement also be applied here?
 
-        physicsState.Transform = GetNewPhysicsRotation(physicsState.Transform);
-        //this.LookFollow(physicsState, GlobalTransform, LookAtPoint, RotationSpeed);
+        //physicsState.Transform = GetNewPhysicsRotation(physicsState.Transform);
+        this.LookFollow(physicsState, GlobalTransform, LookAtPoint, RotationSpeed);
 
         // Reset total sum from previous collisions
         collisionForce = 0.0f;
